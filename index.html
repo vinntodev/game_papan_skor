@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papan Skor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Particles -->
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Winner Announcement Modal -->
+    <div class="winner-announcement" id="winnerModal">
+      <div class="winner-modal">
+        <h2 id="winnerText">🎉 Player 1 Wins! 🎉</h2>
+        <button class="close-modal" onclick="closeWinnerModal()">
+          Play Again
+        </button>
+      </div>
+    </div>
+
+    <div class="scoreboard-container">
+      <div class="game-title">
+        <h1>SCORE BOARD</h1>
+        <p>May the best player win!</p>
+      </div>
+
+      <div class="scoreboard">
+        <div class="players-section">
+          <div class="player-card" id="player1Card">
+            <h2 class="player-name">Player 1</h2>
+            <div class="score-display" id="p1-display">0</div>
+            <button class="score-button" id="p1-button">+1 Point</button>
+          </div>
+
+          <div class="player-card" id="player2Card">
+            <h2 class="player-name">Player 2</h2>
+            <div class="score-display" id="p2-display">0</div>
+            <button class="score-button" id="p2-button">+1 Point</button>
+          </div>
+        </div>
+
+        <div class="controls-section">
+          <div class="win-point-selector">
+            <label for="winpoin">Win Point:</label>
+            <select class="win-point-select" id="winpoin">
+              <option value="5">5 Points</option>
+              <option value="10">10 Points</option>
+              <option value="15">15 Points</option>
+              <option value="20">20 Points</option>
+            </select>
+          </div>
+
+          <button class="reset-button" id="reset">🔄 Reset Game</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
