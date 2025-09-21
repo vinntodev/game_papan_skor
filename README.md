@@ -1,4 +1,7 @@
-🎮 Game Papan Skor by Vinto Rizalfi
+🎮 Game Papan Skor
+![game_image](https://github.com/vinntodev/game_papan_skor/blob/723e85fc8f41ce71f46c1a40a284fb8b63e122fb/assets/img/game_papa_skor.jpeg)
+
+
 Aplikasi web papan skor interaktif dengan desain modern dan animasi menarik.
 📥 Cara Install
 
